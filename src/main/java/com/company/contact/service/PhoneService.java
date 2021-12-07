@@ -5,6 +5,7 @@ import com.company.contact.model.Phone;
 import org.springframework.http.ResponseEntity;
 
 public interface PhoneService {
+
     ResponseEntity<Contact> create(int id, Phone phone);
 
     ResponseEntity<Phone> read(int id);
@@ -12,4 +13,5 @@ public interface PhoneService {
     ResponseEntity<Phone> update(int id, Phone phone);
 
     void delete(int id);
+
 }

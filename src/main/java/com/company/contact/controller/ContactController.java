@@ -15,10 +15,8 @@ public class ContactController {
     @Autowired
     private ContactService contactService;
 
-
     @PostMapping("/add")
     void create(@RequestBody Contact contact) {
-
         contactService.create(contact);
     }
 
@@ -36,7 +34,6 @@ public class ContactController {
     ResponseEntity<Contact> update(@PathVariable int id, @RequestBody Contact contact) {
         return contactService.update(id, contact);
     }
-
 
     @DeleteMapping("/{id}")
     void delete(@PathVariable int id) {

@@ -25,7 +25,6 @@ public class Contact {
     private String lastName;
 
     @ToString.Exclude
-//    @OneToMany
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private List<Phone> phones;

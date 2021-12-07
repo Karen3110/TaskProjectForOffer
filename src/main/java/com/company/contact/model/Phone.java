@@ -11,6 +11,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class Phone {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -20,6 +21,5 @@ public class Phone {
 
     @Enumerated(value = EnumType.STRING)
     private Label label;
-
 
 }
